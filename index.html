@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dropdown list section -->
+    <section id="dropdown">
+            <h3 class="dropdown-h">Select a type of your trip, preferred activity level and tell us how much you would like to spend for each person</h3>
+
+        <div class="dropdown-list">
+            <button class="btn btn-secondary dropdown-toggle red-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Trip Type
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Select Trip Type</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Family</a></li>
+                <li><a class="dropdown-item" href="#">Romantic</a></li>
+                <li><a class="dropdown-item" href="#">Friends</a></li>
+            </ul>
+
+            <button class="btn btn-secondary dropdown-toggle red-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Activity Level
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Select Activity Level</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Relaxed</a></li>
+                <li><a class="dropdown-item" href="#">Moderate</a></li>
+            </ul>
+
+            <button class="btn btn-secondary dropdown-toggle red-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cost
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Select Cost</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">up to £20</a></li>
+                <li><a class="dropdown-item" href="#">up to £50</a></li>
+                <li><a class="dropdown-item" href="#">up to £100</a></li>
+            </ul>
+
+        </div>
+
+        <div class="red-btn">
+            <button id="submitBtn">Submit</button>
+        </div>
+        </section>
+
+        <!-- Offers section -->
+
+        <section id="offer">
+            <h2>Our offers</h2>
+            <p class="normal-p">Explore our extensive range of offers and secure your booking today while they're still available.</p>
+            <div class="container-offers">
+
+
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Moderate" data-cost="up to £50" id="MaddameTussauds">
+                    <img src=".//pictures/Madame-Tussauds-London.jpg" alt="">
+                    <div class="des">
+                    <h5>Maddame Tussauds</h5>
+                    <h6>From <span>£30</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Moderate" data-cost="up to £50" id="MaddameTussauds">
+                    <img src=".//pictures/Madame-Tussauds-London.jpg" alt="">
+                    <div class="des">
+                    <h5>Maddame Tussauds</h5>
+                    <h6>From <span>£30</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Moderate" data-cost="up to £100" id="MaddameTussauds">
+                    <img src=".//pictures/Madame-Tussauds-London.jpg" alt="">
+                    <div class="des">
+                    <h5>Maddame Tussauds</h5>
+                    <h6>From <span>£30</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Relaxed" data-cost="up to £100" id="HelicopterTour">
+                    <img src=".//pictures/Helicopter Tour.jpg" alt="">
+                    <div class="des">
+                    <h5>Helicopter Tour</h5>
+                    <h6>From <span>£99</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Relaxed" data-cost="up to £100" id="HelicopterTour">
+                    <img src=".//pictures/Helicopter Tour.jpg" alt="">
+                    <div class="des">
+                    <h5>Helicopter Tour</h5>
+                    <h6>From <span>£99</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Relaxed" data-cost="up to £100" id="TowerOfLondon">
+                    <img src=".//pictures/Tower of London - Private Tour.jpg" alt="">
+                    <div class="des">
+                    <h5>Tower of London - Private Tour</h5>
+                    <h6>From <span>£80</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Relaxed" data-cost="up to £100" id="TowerOfLondon">
+                    <img src=".//pictures/Tower of London - Private Tour.jpg" alt="">
+                    <div class="des">
+                    <h5>Tower of London - Private Tour</h5>
+                    <h6>From <span>£80</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Relaxed" data-cost="up to £100" id="TheLionKingMusical">
+                    <img src=".//pictures/The Lion King Musical.jpg" alt="">
+                    <div class="des">
+                    <h5>The Lion King Musical</h5>
+                    <h6>From <span>£70</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Moderate" data-cost="up to £20" id="ScienceMusuem">
+                    <img src=".//pictures/science museum.jpg" alt="">
+                    <div class="des">
+                    <h5>Science Musuem</h5>
+                    <h6>From <span>£0</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Moderate" data-cost="up to £20" id="RoyalBotanicGardens">
+                    <img src=".//pictures/Royal Botanic Gardens, Kew.jpg" alt="">
+                    <div class="des">
+                    <h5>Royal Botanic Gardens, Kew</h5>
+                    <h6>From <span>£0</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Moderate" data-cost="up to £20" id="RoyalBotanicGardens">
+                    <img src=".//pictures/Royal Botanic Gardens, Kew.jpg" alt="">
+                    <div class="des">
+                    <h5>Royal Botanic Gardens, Kew</h5>
+                    <h6>From <span>£0</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Moderate" data-cost="up to £20" id="RoyalBotanicGardens">
+                    <img src=".//pictures/Royal Botanic Gardens, Kew.jpg" alt="">
+                    <div class="des">
+                    <h5>Royal Botanic Gardens, Kew</h5>
+                    <h6>From <span>£0</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Moderate" data-cost="up to £100" id="RoyalBotanicGardens">
+                    <img src=".//pictures/Royal Botanic Gardens, Kew.jpg" alt="">
+                    <div class="des">
+                    <h5>Royal Botanic Gardens, Kew</h5>
+                    <h6>From <span>£0</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Relaxed" data-cost="up to £20" id="CanalBoatRide">
+                    <img src=".//pictures/Canal Boat Ride on Camden Lock.jpg" alt="">
+                    <div class="des">
+                    <h5>Canal Boat Ride on Camden Lock</h5>
+                    <h6>From <span>£17</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Relaxed" data-cost="up to £20" id="CanalBoatRide">
+                    <img src=".//pictures/Canal Boat Ride on Camden Lock.jpg" alt="">
+                    <div class="des">
+                    <h5>Canal Boat Ride on Camden Lock</h5>
+                    <h6>From <span>£17</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Relaxed" data-cost="up to £20" id="CanalBoatRide">
+                    <img src=".//pictures/Canal Boat Ride on Camden Lock.jpg" alt="">
+                    <div class="des">
+                    <h5>Canal Boat Ride on Camden Lock</h5>
+                    <h6>From <span>£17</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Relaxed" data-cost="up to £50" id="CanalBoatRide">
+                    <img src=".//pictures/Canal Boat Ride on Camden Lock.jpg" alt="">
+                    <div class="des">
+                    <h5>Canal Boat Ride on Camden Lock</h5>
+                    <h6>From <span>£17</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Relaxed" data-cost="up to £50" id="CanalBoatRide">
+                    <img src=".//pictures/Kidzania.png" alt="">
+                    <div class="des">
+                    <h5>Kidzania</h5>
+                    <h6>From <span>£35</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Relaxed" data-cost="up to £50" id="CanalBoatRide">
+                    <img src=".//pictures/The London Dungeons.jpeg" alt="">
+                    <div class="des">
+                    <h5>The London Dungeons</h5>
+                    <h6>From <span>£30</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Family" data-activity-level="Moderate" data-cost="up to £100" id="CanalBoatRide">
+                    <img src=".//pictures/Cutty Sark Rig Climb.jpg" alt="">
+                    <div class="des">
+                    <h5>Cutty Sark Rig Climb </h5>
+                    <h6>From <span>£52</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Moderate" data-cost="up to £100" id="CanalBoatRide">
+                    <img src=".//pictures/Cutty Sark Rig Climb.jpg" alt="">
+                    <div class="des">
+                    <h5>Cutty Sark Rig Climb </h5>
+                    <h6>From <span>£52</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Moderate" data-cost="up to £50" id="CanalBoatRide">
+                    <img src=".//pictures/Up at The O2.jpg" alt="">
+                    <div class="des">
+                    <h5>Up at The O2 </h5>
+                    <h6>From <span>£40</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Moderate" data-cost="up to £50" id="CanalBoatRide">
+                    <img src=".//pictures/Up at The O2.jpg" alt="">
+                    <div class="des">
+                    <h5>Up at The O2 </h5>
+                    <h6>From <span>£40</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Moderate" data-cost="up to £100" id="CanalBoatRide">
+                    <img src=".//pictures/Up at The O2.jpg" alt="">
+                    <div class="des">
+                    <h5>Up at The O2 </h5>
+                    <h6>From <span>£40</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Moderate" data-cost="up to £100" id="CanalBoatRide">
+                    <img src=".//pictures/Up at The O2.jpg" alt="">
+                    <div class="des">
+                    <h5>Up at The O2 </h5>
+                    <h6>From <span>£40</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Relaxed" data-cost="up to £100" id="CanalBoatRide">
+                    <img src=".//pictures/London dinner River.jpg" alt="">
+                    <div class="des">
+                    <h5>The London Dinner Cruise on the Thames River </h5>
+                    <h6>From <span>£85</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Relaxed" data-cost="up to £100" id="CanalBoatRide">
+                    <img src=".//pictures/London dinner River.jpg" alt="">
+                    <div class="des">
+                    <h5>The London Dinner Cruise on the Thames River </h5>
+                    <h6>From <span>£85</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Relaxed" data-cost="up to £50">
+                    <img src=".//pictures/ghost bus.jpg" alt="">
+                    <div class="des">
+                    <h5>Ghost Bus Tour of London </h5>
+                    <h6>From <span>£28</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Relaxed" data-cost="up to £100">
+                    <img src=".//pictures/tea.jpg" alt="">
+                    <div class="des">
+                    <h5>The Kensington Palace Gardens Royal High Tea</h5>
+                    <h6>From <span>£99</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Relaxed" data-cost="up to £100">
+                    <img src=".//pictures/tea.jpg" alt="">
+                    <div class="des">
+                    <h5>The Kensington Palace Gardens Royal High Tea</h5>
+                    <h6>From <span>£99</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Moderate" data-cost="up to £20">
+                    <img src=".//pictures/Pub Crawl of Central London.jpg" alt="">
+                    <div class="des">
+                    <h5>Pub Crawl of Central London</h5>
+                    <h6>From <span>£19</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Friends" data-activity-level="Relaxed" data-cost="up to £50">
+                    <img src=".//pictures/Westminster Abbey.jpg" alt="">
+                    <div class="des">
+                    <h5>Westminster Abbey Tour</h5>
+                    <h6>From <span>£27</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Relaxed" data-cost="up to £50">
+                    <img src=".//pictures/Westminster Abbey.jpg" alt="">
+                    <div class="des">
+                    <h5>Westminster Abbey Tour</h5>
+                    <h6>From <span>£27</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Moderate" data-cost="up to £100">
+                    <img src=".//pictures/Lovers Leap Bungee Jump.png" alt="">
+                    <div class="des">
+                    <h5>Lovers Leap Bungee Jump</h5>
+                    <h6>From <span>£80</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Moderate" data-cost="up to £20">
+                    <img src=".//pictures/FRAMELESS.jpg" alt="">
+                    <div class="des">
+                    <h5>Frameless - Immersive Art Experience</h5>
+                    <h6>From <span>£18</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+                <div class="card-offer" data-trip-type="Romantic" data-activity-level="Moderate" data-cost="up to £50">
+                    <img src=".//pictures/FRAMELESS.jpg" alt="">
+                    <div class="des">
+                    <h5>Frameless - Immersive Art Experience</h5>
+                    <h6>From <span>£18</span></h6>
+                    <button class="btn-offers">Book now</button>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    
+
+
+
+
+<!-- Dropdown JS bootstrap-->
+
+
+<script>
+    // Get all dropdown buttons and their respective menus
+    const dropdownButtons = document.querySelectorAll('.dropdown-toggle');
+    const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+
+    // Add a click event listener to each dropdown item
+    dropdownMenus.forEach((menu, index) => {
+        menu.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Update the text of the corresponding dropdown button
+                dropdownButtons[index].textContent = item.textContent;
+                // Prevent the default link behavior
+                item.href = "javascript:void(0)";
+            });
+        });
+    });
+</script>
+
+<!-- ------ -->
+<!-- OFFERS JS BOOTSTARP -->
+
+<!-- LONDON EYE -->
+<script>
+    const offersContainer = document.querySelector('.container-offers');
+    const offersData = [
+        { tripType: 'Family', activityLevel: 'Relaxed', cost: 'up to £20' },
+        { tripType: 'Romantic', activityLevel: 'Relaxed', cost: 'up to £20' },
+        { tripType: 'Friends', activityLevel: 'Relaxed', cost: 'up to £20' },
+        { tripType: 'Family', activityLevel: 'Relaxed', cost: 'up to £50' },
+        { tripType: 'Romantic', activityLevel: 'Relaxed', cost: 'up to £50' },
+        { tripType: 'Friends', activityLevel: 'Relaxed', cost: 'up to £50' }
+    ];
+
+    offersData.forEach(offer => {
+        const card = document.createElement('div');
+        card.className = 'card-offer';
+        card.setAttribute('data-trip-type', offer.tripType);
+        card.setAttribute('data-activity-level', offer.activityLevel);
+        card.setAttribute('data-cost', offer.cost);
+        card.id = 'LondonEye'; // You can set a unique ID here if needed
+
+        card.innerHTML = `
+            <img src="./pictures/LONDON EYE.jpg" alt="">
+            <div class="des">
+                <h5>London Eye</h5>
+                <h6>From <span>£19</span></h6>
+                <button class="btn-offers">Book now</button>
+            </div>
+        `;
+
+        offersContainer.appendChild(card);
+    });
+</script>
+
+<!-- LONDON ZOO -->
+<script>
+    const offersContainerZoo = document.querySelector('.container-offers');
+    const offersDataZoo = [
+        { tripType: 'Family', activityLevel: 'Moderate', cost: 'up to £50' },
+        { tripType: 'Romantic', activityLevel: 'Moderate', cost: 'up to £50' },
+        { tripType: 'Friends', activityLevel: 'Moderate', cost: 'up to £50' },
+    ];
+
+    offersDataZoo.forEach(offer => {
+        const card = document.createElement('div');
+        card.className = 'card-offer';
+        card.setAttribute('data-trip-type', offer.tripType);
+        card.setAttribute('data-activity-level', offer.activityLevel);
+        card.setAttribute('data-cost', offer.cost);
+        card.id = 'LondonZoo'; // You can set a unique ID here if needed
+
+        card.innerHTML = `
+            <img src=".//pictures/london zoo.jpg" alt="">
+            <div class="des">
+                <h5>London Zoo</h5>
+                <h6>From <span>£27</span></h6>
+                <button class="btn-offers">Book now</button>
+            </div>
+        `;
+
+        offersContainerZoo.appendChild(card);
+    });
+</script>
+
+
+
+
+<!-- SKY GARDEN -->
+
+    <script>
+    const offersContainerSky = document.querySelector('.container-offers');
+    const offersDataSky = [
+        { tripType: 'Family', activityLevel: 'Moderate', cost: 'up to £50' },
+        { tripType: 'Romantic', activityLevel: 'Moderate', cost: 'up to £50' },
+        { tripType: 'Friends', activityLevel: 'Moderate', cost: 'up to £50' },
+    ];
+
+    offersDataSky.forEach(offer => {
+        const card = document.createElement('div');
+        card.className = 'card-offer';
+        card.setAttribute('data-trip-type', offer.tripType);
+        card.setAttribute('data-activity-level', offer.activityLevel);
+        card.setAttribute('data-cost', offer.cost);
+        card.id = 'SkyGarden';
+
+    card.innerHTML = `
+        <img src=".//pictures/sky garden.jpg" alt="">
+        <div class="des">
+            <h5>Sky Garden</h5>
+            <h6>From <span>£0</span></h6>
+            <button class="btn-offers">Book now</button>
+        </div>
+    `;
+
+    offersContainerSky.appendChild(card);
+    });
+
+    </script>
+
+<!-- WARNER BROS -->
+
+<script>
+    const offersContainerWarner = document.querySelector('.container-offers');
+    const offersDataWarner = [
+        { tripType: 'Family', activityLevel: 'Moderate', cost: 'up to £100' },
+    ];
+
+    offersDataWarner.forEach(offer => {
+        const card = document.createElement('div');
+        card.className = 'card-offer';
+        card.setAttribute('data-trip-type', offer.tripType);
+        card.setAttribute('data-activity-level', offer.activityLevel);
+        card.setAttribute('data-cost', offer.cost);
+        card.id = 'SkyGarden';
+
+    card.innerHTML = `
+        <img src=".//pictures/Warner Bros Studio Tour.jpg" alt="">
+        <div class="des">
+            <h5>Warner Bros Studio Tour</h5>
+            <h6>From <span>£60</span></h6>
+            <button class="btn-offers">Book now</button>
+        </div>
+    `;
+
+    offersContainerWarner.appendChild(card);
+});
+
+</script>
+
+<!-- SEA LIFE -->
+
+<script>
+    const offersContainerSea = document.querySelector('.container-offers');
+    const offersDataSea = [
+        { tripType: 'Family', activityLevel: 'Moderate', cost: 'up to £50' },
+        { tripType: 'Friends', activityLevel: 'Moderate', cost: 'up to £50' },
+        { tripType: 'Friends', activityLevel: 'Moderate', cost: 'up to £100' },
+    ];
+
+    offersDataSea.forEach(offer => {
+        const card = document.createElement('div');
+        card.className = 'card-offer';
+        card.setAttribute('data-trip-type', offer.tripType);
+        card.setAttribute('data-activity-level', offer.activityLevel);
+        card.setAttribute('data-cost', offer.cost);
+        card.id = 'SeaLife';
+
+    card.innerHTML = `
+        <img src=".//pictures/seanlife.jpg" alt="">
+        <div class="des">
+            <h5>Sea Life</h5>
+            <h6>From <span>£25</span></h6>
+            <button class="btn-offers">Book now</button>
+        </div>
+    `;
+
+    offersContainerSea.appendChild(card);
+});
+
+</script>
+
+<!-- NATURAL HISTORY Museum -->
+
+<script>
+    const offersContainerNatural = document.querySelector('.container-offers');
+    const offersDataNatural = [
+        { tripType: 'Family', activityLevel: 'Moderate', cost: 'up to £20' },
+        { tripType: 'Friends', activityLevel: 'Moderate', cost: 'up to £20' },
+        { tripType: 'Romantic', activityLevel: 'Moderate', cost: 'up to £20' },
+    ];
+
+    offersDataNatural.forEach(offer => {
+        const card = document.createElement('div');
+        card.className = 'card-offer';
+        card.setAttribute('data-trip-type', offer.tripType);
+        card.setAttribute('data-activity-level', offer.activityLevel);
+        card.setAttribute('data-cost', offer.cost);
+        card.id = 'NaturalHistoryMuseum';
+
+    card.innerHTML = `
+        <img src=".//pictures/Natural History Museum.jpg" alt="">
+        <div class="des">
+            <h5>Natural History Museum</h5>
+            <h6>From <span>£0</span></h6>
+            <button class="btn-offers">Book now</button>
+        </div>
+    `;
+
+    offersContainerNatural.appendChild(card);
+});
+
+</script>
+
+
+<script>
+    const submitButton = document.getElementById('submitBtn');
+    const tripTypeDropdown = document.querySelector('.red-dropdown');
+    const activityLevelDropdown = document.querySelectorAll('.red-dropdown')[1];
+    const costDropdown = document.querySelectorAll('.red-dropdown')[2];
+
+    submitButton.addEventListener('click', () => {
+        const selectedTripType = tripTypeDropdown.textContent.trim();
+        const selectedActivityLevel = activityLevelDropdown.textContent.trim();
+        const selectedCost = costDropdown.textContent.trim();
+
+        const allOffers = document.querySelectorAll('.card-offer');
+
+        allOffers.forEach(offer => {
+            offer.style.display = 'none';
+            const offerTripType = offer.getAttribute('data-trip-type');
+            const offerActivityLevel = offer.getAttribute('data-activity-level');
+            const offerCost = offer.getAttribute('data-cost');
+
+            if (
+                (selectedTripType === 'Trip Type' || selectedTripType === offerTripType) &&
+                (selectedActivityLevel === 'Activity Level' || selectedActivityLevel === offerActivityLevel) &&
+                (selectedCost === 'Cost' || selectedCost === offerCost)
+            ) {
+                offer.style.display = 'block';
+            }
+        });
+
+        // Show the "Offers" section
+        document.getElementById('offer').style.display = 'block';
+    });
+</script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
